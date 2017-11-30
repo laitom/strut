@@ -97,8 +97,8 @@ char *strut_rsplit(const char *s, int n) {
 }
 
 char *strut_lstrip(char *s) {
-    for ( ; isspace((unsigned char) *s); ++s)
-	;
+    while (isspace((unsigned char) *s))
+	++s;
 
     return s;
 }
