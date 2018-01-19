@@ -1,3 +1,6 @@
+#ifndef STRUT_H
+#define STRUT_H
+
 #include <stdbool.h>
 
 /**
@@ -186,3 +189,5 @@ int strut_strn_occur(const char *s1, const char *s2, int n);
  * @return The number of possibly overlapping occurences of s2 found from s1.
  */
 int strut_strn_ol_occur(const char *s1, const char *s2, int n);
+
+#endif // STRUT_H
